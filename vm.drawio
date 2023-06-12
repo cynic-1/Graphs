@@ -1,9 +1,33 @@
-<mxfile host="app.diagrams.net" modified="2023-06-12T14:49:46.220Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.43" version="21.3.7" etag="fOwG1KPv_Bq4jjjCeZX2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-12T15:05:10.063Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.43" etag="ijZhdNnJN2YN2l6l-PkQ" version="21.3.7" type="github">
   <diagram name="第 1 页" id="trL_U1DXa2WFd2KebFxf">
-    <mxGraphModel>
+    <mxGraphModel dx="834" dy="851" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Cb4Z3w9XPMKozXseevm7-1" value="Hardware" style="rounded=0;whiteSpace=wrap;html=1;fontSize=28;" vertex="1" parent="1">
+          <mxGeometry x="20" y="480" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Cb4Z3w9XPMKozXseevm7-2" value="MacOS" style="rounded=0;whiteSpace=wrap;html=1;fontSize=28;" vertex="1" parent="1">
+          <mxGeometry x="20" y="420" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Cb4Z3w9XPMKozXseevm7-3" value="Windows" style="rounded=0;whiteSpace=wrap;html=1;fontSize=28;" vertex="1" parent="1">
+          <mxGeometry x="20" y="360" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Cb4Z3w9XPMKozXseevm7-4" value="Hardware" style="rounded=0;whiteSpace=wrap;html=1;fontSize=28;" vertex="1" parent="1">
+          <mxGeometry x="480" y="480" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Cb4Z3w9XPMKozXseevm7-5" value="Cairo VM" style="rounded=0;whiteSpace=wrap;html=1;fontSize=28;" vertex="1" parent="1">
+          <mxGeometry x="480" y="420" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Cb4Z3w9XPMKozXseevm7-6" value="Kakarot zkEVM" style="rounded=0;whiteSpace=wrap;html=1;fontSize=28;" vertex="1" parent="1">
+          <mxGeometry x="480" y="360" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Cb4Z3w9XPMKozXseevm7-8" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="346" y="449.5" as="sourcePoint" />
+            <mxPoint x="466" y="449.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
