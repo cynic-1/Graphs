@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-12T14:40:23.319Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.43" etag="wVdjvj38EGCH6h3znT-J" version="21.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-12T14:45:37.347Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.43" etag="4L760ZoCqVVe7TGAUeQp" version="21.3.7" type="github">
   <diagram name="第 1 页" id="F7UE95_TtwlgKJ-Adihr">
     <mxGraphModel dx="2212" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -16,10 +16,13 @@
         <mxCell id="ezU-g5z-_iYozxNblPbD-5" value="zkEVM" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=40;" vertex="1" parent="1">
           <mxGeometry x="322" y="402" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ezU-g5z-_iYozxNblPbD-6" value="生态" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;" vertex="1" parent="1">
+        <mxCell id="ezU-g5z-_iYozxNblPbD-6" value="ecosystem" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=28;fontColor=#FF0000;" vertex="1" parent="1">
           <mxGeometry x="303" y="460" width="98" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ezU-g5z-_iYozxNblPbD-8" value="效率" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;" vertex="1" parent="1">
+        <mxCell id="ezU-g5z-_iYozxNblPbD-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ezU-g5z-_iYozxNblPbD-6" target="ezU-g5z-_iYozxNblPbD-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ezU-g5z-_iYozxNblPbD-11" value="efficiency" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=28;fontColor=#FF0000;" vertex="1" parent="1">
           <mxGeometry x="541" y="460" width="98" height="30" as="geometry" />
         </mxCell>
       </root>
