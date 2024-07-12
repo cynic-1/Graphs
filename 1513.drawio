@@ -1,9 +1,48 @@
-<mxfile host="app.diagrams.net" modified="2024-07-12T05:24:56.844Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" version="24.6.5" etag="PXYvTRi8STjMYOouoRLZ" type="github">
-  <diagram name="第 1 页" id="84-zk4sHA_rQrC2mLFSZ">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" modified="2024-07-12T05:37:26.401Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="Gt_ZZ1m2FdyFXUVg919L" version="24.6.5" type="github">
+  <diagram name="页-1" id="84-zk4sHA_rQrC2mLFSZ">
+    <mxGraphModel dx="984" dy="1135" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <UserObject label="&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size: 25.4px; font-family: &amp;quot;Times New Roman&amp;quot;; direction: ltr; letter-spacing: 0px; line-height: 120%; opacity: 1;&quot;&gt;&lt;b&gt;应用层&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" tags="背景" id="YedZbIMOWQt9cjqS6kRY-11">
+          <mxCell style="verticalAlign=middle;align=center;overflow=width;vsdxID=12;fillColor=none;gradientColor=none;shape=stencil(nZBLDoAgDERP0z3SIyjew0SURgSD+Lu9kMZoXLhwN9O+tukAlrNpJg1SzDH4QW/URgNYgZTkjA4UkwJUgGXng+6DX1zLfmoymdXo17xh5zmRJ6Q42BWCfc2oJfdAr+Yv+AP9Cb7OJ3H/2JG1HNGz/84klThPVCc=);strokeColor=none;points=[];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="190" y="249" width="178" height="50" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size: 25.4px; font-family: &amp;quot;Times New Roman&amp;quot;; direction: ltr; letter-spacing: 0px; line-height: 120%; opacity: 1;&quot;&gt;&lt;b&gt;合约层&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" tags="背景" id="YedZbIMOWQt9cjqS6kRY-12">
+          <mxCell style="verticalAlign=middle;align=center;overflow=width;vsdxID=12;fillColor=none;gradientColor=none;shape=stencil(nZBLDoAgDERP0z3SIyjew0SURgSD+Lu9kMZoXLhwN9O+tukAlrNpJg1SzDH4QW/URgNYgZTkjA4UkwJUgGXng+6DX1zLfmoymdXo17xh5zmRJ6Q42BWCfc2oJfdAr+Yv+AP9Cb7OJ3H/2JG1HNGz/84klThPVCc=);strokeColor=none;points=[];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="190" y="370" width="178" height="50" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size: 25.4px; font-family: &amp;quot;Times New Roman&amp;quot;; direction: ltr; letter-spacing: 0px; line-height: 120%; opacity: 1;&quot;&gt;&lt;b&gt;网络层&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" tags="背景" id="YedZbIMOWQt9cjqS6kRY-13">
+          <mxCell style="verticalAlign=middle;align=center;overflow=width;vsdxID=12;fillColor=none;gradientColor=none;shape=stencil(nZBLDoAgDERP0z3SIyjew0SURgSD+Lu9kMZoXLhwN9O+tukAlrNpJg1SzDH4QW/URgNYgZTkjA4UkwJUgGXng+6DX1zLfmoymdXo17xh5zmRJ6Q42BWCfc2oJfdAr+Yv+AP9Cb7OJ3H/2JG1HNGz/84klThPVCc=);strokeColor=none;points=[];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="190" y="484" width="178" height="50" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="YedZbIMOWQt9cjqS6kRY-14" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;资产&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;数字化&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="428.5" y="234" width="111" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YedZbIMOWQt9cjqS6kRY-15" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;交易撮合&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="547.5" y="234" width="111" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YedZbIMOWQt9cjqS6kRY-16" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;身份认证&lt;br&gt;权限管理&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="670.5" y="234" width="111" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YedZbIMOWQt9cjqS6kRY-17" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;数据安全&lt;br&gt;隐私保护&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="790.5" y="234" width="111" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YedZbIMOWQt9cjqS6kRY-18" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;监管&lt;br&gt;与审计&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="910.5" y="234" width="111" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YedZbIMOWQt9cjqS6kRY-19" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;智能合约引擎&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="428.5" y="355" width="591.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YedZbIMOWQt9cjqS6kRY-20" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;PPoV高性能联盟链&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="428.5" y="469" width="281" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YedZbIMOWQt9cjqS6kRY-21" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;&lt;font face=&quot;Times New Roman&quot;&gt;MIN高安全网络&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="741" y="469" width="279" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
