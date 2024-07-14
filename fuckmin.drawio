@@ -1,9 +1,177 @@
-<mxfile host="app.diagrams.net" modified="2024-07-14T06:08:54.443Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" version="24.6.5" etag="ectw4k-twlVbKqsL5S1n" type="github">
-  <diagram name="第 1 页" id="1gks2j2mxZgw-Eoww3x7">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" modified="2024-07-14T06:09:11.242Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="kPIRUAX__8n2jYgcW2CD" version="24.6.5" type="github">
+  <diagram name="Page-1" id="1gks2j2mxZgw-Eoww3x7">
+    <mxGraphModel dx="2266" dy="1145" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-1" value="" style="swimlane;startSize=0;labelBackgroundColor=default;fontSize=18;align=right;verticalAlign=middle;strokeColor=#3399FF;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="110" y="190" width="910" height="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-2" value="Receive &#39;Data Publishing Interest Packet&#39; and verify signature" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;spacing=10;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="496" y="89.5" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-3" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-4" target="7eTt3Wd7QuYvfLAh2zUn-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-4" value="Is the signature valid?" style="rhombus;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="496" y="188" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=15;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-2" target="7eTt3Wd7QuYvfLAh2zUn-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-7" target="7eTt3Wd7QuYvfLAh2zUn-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-7" value="Discard &#39;Data Publishing Interest Packet&#39;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="752" y="205" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=15;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-4" target="7eTt3Wd7QuYvfLAh2zUn-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="732" y="254" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-9" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;" vertex="1" connectable="0" parent="7eTt3Wd7QuYvfLAh2zUn-8">
+          <mxGeometry x="-0.1028" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=15;strokeColor=#000000;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="602" y="429" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-12" target="7eTt3Wd7QuYvfLAh2zUn-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-12" value="&lt;p style=&quot;line-height: 1.2; font-size: 15px;&quot;&gt;Extract the new data sequence number from the &#39;Data Publishing Interest Packet&#39;&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;spacing=5;spacingTop=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="496" y="330" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-13" value="Receive &#39;Node Data Packet&#39; and verify signature" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;spacing=10;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="505.5" y="916" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-14" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-16" target="7eTt3Wd7QuYvfLAh2zUn-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-15" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=15;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-16" target="7eTt3Wd7QuYvfLAh2zUn-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-16" value="Is the signature valid?" style="rhombus;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="505.5" y="1033" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=15;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-13" target="7eTt3Wd7QuYvfLAh2zUn-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-19" target="7eTt3Wd7QuYvfLAh2zUn-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="836.5" y="1048" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-19" value="Discard &#39;Node Data Packet&#39;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="776.5" y="1048" width="83" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-21" target="7eTt3Wd7QuYvfLAh2zUn-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-21" value="&lt;p style=&quot;line-height: 1.2; font-size: 15px;&quot;&gt;Store the data contained in the &#39;Node Data Packet&#39; in the Sync Dataset, update the Dataset State IBF and Dataset State Log&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;spacing=5;spacingTop=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="470" y="1183" width="281" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-22" value="End" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;arcSize=50;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="524.5" y="1304" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=15;strokeColor=#000000;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-24" target="7eTt3Wd7QuYvfLAh2zUn-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-24" value="The application generates new data, the node stores the new data in the Sync Dataset, updates the Dataset State IBF and Dataset State Log, sends the &#39;Data Publishing Interest Packet&#39;, and signs it with a private key" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;spacing=10;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="30" y="59" width="370" height="131" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=15;strokeColor=#000000;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-26" target="7eTt3Wd7QuYvfLAh2zUn-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-26" value="Start" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;arcSize=50;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="124" y="9" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-27" value="Receive &#39;Data Requesting Interest Packet&#39; and verify signature" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;spacing=10;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="70" y="660" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-28" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-29" target="7eTt3Wd7QuYvfLAh2zUn-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-29" value="Is the signature valid?" style="rhombus;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="70" y="765" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=15;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-27" target="7eTt3Wd7QuYvfLAh2zUn-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-32" target="7eTt3Wd7QuYvfLAh2zUn-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-32" value="Discard &#39;Data Requesting Interest Packet&#39;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="325" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.019;entryY=0.414;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=15;strokeColor=#000000;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-34" target="7eTt3Wd7QuYvfLAh2zUn-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-34" value="&lt;p style=&quot;line-height: 1.2; font-size: 15px;&quot;&gt;Extract the new data sequence number from the &#39;Data Requesting Interest Packet&#39;, send the &#39;Node Data Packet&#39;, and sign it with a private key&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;spacing=5;spacingTop=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="20" y="891" width="310" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-35" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=15;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-29" target="7eTt3Wd7QuYvfLAh2zUn-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="305" y="825" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-36" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=15;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-38" target="7eTt3Wd7QuYvfLAh2zUn-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-37" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=15;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-38" target="7eTt3Wd7QuYvfLAh2zUn-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-38" value="Is the sequence&lt;br&gt;number the same &lt;br style=&quot;font-size: 15px&quot;&gt;as the data sequence number received last time with the same &lt;br style=&quot;font-size: 15px&quot;&gt;node prefix plus 1?" style="rhombus;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="470" y="428.5" width="280" height="141.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-40" target="7eTt3Wd7QuYvfLAh2zUn-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="499" />
+              <mxPoint x="860" y="494" />
+              <mxPoint x="900" y="494" />
+              <mxPoint x="900" y="1290" />
+              <mxPoint x="610" y="1290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-40" value="Entering the data recovery process" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="790" y="449.25" width="86" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=15;strokeColor=#000000;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1" source="7eTt3Wd7QuYvfLAh2zUn-42" target="7eTt3Wd7QuYvfLAh2zUn-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-42" value="&lt;p style=&quot;line-height: 1.2; font-size: 15px;&quot;&gt;Publish the &#39;Data Requesting Interest Packet&#39; and sign it with a private key&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;spacing=5;spacingTop=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry x="490" y="605" width="241" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-43" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;rounded=0;fontSize=18;dashPattern=1 1;strokeColor=#3399FF;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0.507;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="7eTt3Wd7QuYvfLAh2zUn-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460.884" y="1360" as="sourcePoint" />
+            <mxPoint x="460.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="460.5" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-44" value="Data Producer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#ffe6cc;strokeColor=#3399FF;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="100" y="150" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-45" value="MINSync Synchronization Process" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#CCE5FF;strokeColor=#3399FF;strokeWidth=1.5;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="50" y="110" width="970" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-46" value="&amp;nbsp;Stage&lt;br&gt;One" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#CCE5FF;strokeColor=#3399FF;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="50" y="150" width="60" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-47" value="Stage&lt;br&gt;Two" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#A8D4FF;strokeColor=#3399FF;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="50" y="480" width="60" height="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="7eTt3Wd7QuYvfLAh2zUn-48" value="Data Consumer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#fff2cc;strokeColor=#3399FF;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="570" y="150" width="450" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
