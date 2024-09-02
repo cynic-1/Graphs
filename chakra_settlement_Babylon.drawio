@@ -1,9 +1,54 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0" version="24.7.8">
   <diagram name="第 1 页" id="hiAz2fmXMrzASrP7i6Rt">
-    <mxGraphModel>
+    <mxGraphModel dx="1024" dy="1135" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="19Ys3CgmfC235RJ0CHdx-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="19Ys3CgmfC235RJ0CHdx-1" target="19Ys3CgmfC235RJ0CHdx-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19Ys3CgmfC235RJ0CHdx-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Starknet&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="140" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="19Ys3CgmfC235RJ0CHdx-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="19Ys3CgmfC235RJ0CHdx-2" target="19Ys3CgmfC235RJ0CHdx-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19Ys3CgmfC235RJ0CHdx-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Chakra Settlement Consensus&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="420" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="19Ys3CgmfC235RJ0CHdx-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="19Ys3CgmfC235RJ0CHdx-3" target="19Ys3CgmfC235RJ0CHdx-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19Ys3CgmfC235RJ0CHdx-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Relayer&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="220" y="260" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="19Ys3CgmfC235RJ0CHdx-5" value="Settlement Event" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="270" y="218" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="19Ys3CgmfC235RJ0CHdx-7" value="Settlement Message" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="360" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="19Ys3CgmfC235RJ0CHdx-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="19Ys3CgmfC235RJ0CHdx-8" target="19Ys3CgmfC235RJ0CHdx-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19Ys3CgmfC235RJ0CHdx-8" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Babylon FP Network&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="420" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="19Ys3CgmfC235RJ0CHdx-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="19Ys3CgmfC235RJ0CHdx-12" target="19Ys3CgmfC235RJ0CHdx-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19Ys3CgmfC235RJ0CHdx-12" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Babylon Chain&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="420" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="19Ys3CgmfC235RJ0CHdx-14" value="Majority signed &lt;br&gt;message" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="407" y="415" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="19Ys3CgmfC235RJ0CHdx-16" value="PR+&lt;br&gt;EOTS Sigs" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="790" y="413" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="19Ys3CgmfC235RJ0CHdx-18" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Finalized Message&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="250" width="260" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
