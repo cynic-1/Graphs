@@ -1,9 +1,105 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0" version="24.7.14">
-  <diagram name="第 1 页" id="6ynVE3JUyWCL2I9uEFbG">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0" version="24.8.4">
+  <diagram name="Page-0" id="6ynVE3JUyWCL2I9uEFbG">
+    <mxGraphModel dx="1875" dy="781" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-5" value="PoV&lt;br&gt;2017" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="384" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-6" value="PnV&lt;br&gt;2019" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="280" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-8" value="HotStuff&lt;br&gt;2018" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="280" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-9" value="PoW&lt;br&gt;1999" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-10" value="BFT&lt;br&gt;1982" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-11" value="PoS&lt;br&gt;2011" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-12" value="DPoS&lt;br&gt;2013" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-13" value="Ouroboros&lt;br&gt;2017" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-14" value="GHOST&lt;br&gt;2015" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="444" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-15" value="PoSpace&lt;br&gt;2014" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-16" value="PoB&lt;br&gt;2014" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-17" value="PoET&lt;br&gt;2016" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-18" value="PoL&lt;br&gt;2016" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-19" value="Bitcoin-NG&lt;br&gt;2016" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="384" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-20" value="Ripple(RPCA)&lt;br&gt;2013" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-21" value="轻量化 PnV&lt;br&gt;2021" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="160" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-22" value="拟态PnV&lt;br&gt;2022" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="250" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-23" value="VaaP&lt;br&gt;2022" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="140" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-24" value="Sync HotStuff&lt;br&gt;2020" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="170" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-26" value="Fast HotStuff&lt;br&gt;2020" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="304" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-27" value="PBFT&lt;br&gt;1999" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="711" y="622" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-28" value="Tangaroa&lt;br&gt;2014" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="761" y="732" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-29" value="Scalable BFT&lt;br&gt;1999" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="711" y="842" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-30" value="Stellar(SCP)&lt;br&gt;2015" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="931" y="582" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-32" value="Quorum Voting&lt;br&gt;2015" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="961" y="742" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-33" value="CoT&lt;br&gt;2018" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="800" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-34" value="Algorand&lt;br&gt;2016" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="585" y="720" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-35" value="Honey Badger&lt;br&gt;2016" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="890" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-36" value="Dumbo&lt;br&gt;2020" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="940" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-37" value="Dumbo-NG&lt;br&gt;2022" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="920" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-38" value="ByzCoin&lt;br&gt;2016" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jjx-n1GLnTYui9cO-WU7-39" value="ByzCoinX&lt;br&gt;2017" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="280" width="120" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
