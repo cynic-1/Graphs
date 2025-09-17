@@ -1,9 +1,151 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.3">
   <diagram name="第 1 页" id="O-ij__SscOE2mFLP_LYd">
-    <mxGraphModel>
+    <mxGraphModel dx="1426" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-1" value="Thread Idle" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="823" y="20" width="112" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-2" value="val_idx &amp;lt; exec_idx?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="193" y="124" width="192" height="192" as="geometry" />
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-3" value="Validate Tx val_idx" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="79" y="437" width="196" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-4" value="exec_idx &amp;lt; N?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="325" y="389" width="151" height="151" as="geometry" />
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-5" value="Wait for active_cnt==0" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="710" width="223" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-6" value="Mark EXEC and VM Execution" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="749" y="698" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-7" value="Encounter EST in read set?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="757" y="935" width="244" height="244" as="geometry" />
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-8" value="Register dependency&#xa; status=READY" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="873" y="1251" width="209" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-9" value="Write to MVStore&#xa;status=EXECED" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1132" y="1251" width="182" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-10" value="Read set validation passed?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="293" y="612" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-11" value="status=COMMIT&#xa;wake dependents" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="522" y="1018" width="185" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-12" value="status=ABORT&#xa;Write set → EST" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="294" y="1018" width="176" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-13" value="Wake dependents &amp; Retry" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1263" width="245" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-14" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.59;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="FMKRP7JuEmRdxRbRiy9P-1" target="FMKRP7JuEmRdxRbRiy9P-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="289" y="99" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-15" value="Yes" style="curved=1;startArrow=none;endArrow=block;exitX=0.08;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="FMKRP7JuEmRdxRbRiy9P-2" target="FMKRP7JuEmRdxRbRiy9P-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="177" y="352" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-16" value="No" style="curved=1;startArrow=none;endArrow=block;exitX=0.92;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="FMKRP7JuEmRdxRbRiy9P-2" target="FMKRP7JuEmRdxRbRiy9P-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="401" y="352" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-17" value="No" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.71;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="FMKRP7JuEmRdxRbRiy9P-4" target="FMKRP7JuEmRdxRbRiy9P-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="131" y="576" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-18" value="Yes" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.62;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="FMKRP7JuEmRdxRbRiy9P-4" target="FMKRP7JuEmRdxRbRiy9P-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="879" y="576" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-19" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="FMKRP7JuEmRdxRbRiy9P-6" target="FMKRP7JuEmRdxRbRiy9P-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-20" value="Yes" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.26;entryY=0;rounded=0;" edge="1" parent="1" source="FMKRP7JuEmRdxRbRiy9P-7" target="FMKRP7JuEmRdxRbRiy9P-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="879" y="1215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-21" value="No" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.86;entryX=0.15;entryY=0;rounded=0;" edge="1" parent="1" source="FMKRP7JuEmRdxRbRiy9P-7" target="FMKRP7JuEmRdxRbRiy9P-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="1215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-22" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.8;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="FMKRP7JuEmRdxRbRiy9P-3" target="FMKRP7JuEmRdxRbRiy9P-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="418" y="576" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-23" value="Yes" style="curved=1;startArrow=none;endArrow=block;exitX=0.86;exitY=1;entryX=0.4;entryY=-0.01;rounded=0;" edge="1" parent="1" source="FMKRP7JuEmRdxRbRiy9P-10" target="FMKRP7JuEmRdxRbRiy9P-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="535" y="898" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-24" value="No" style="curved=1;startArrow=none;endArrow=block;exitX=0.39;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="FMKRP7JuEmRdxRbRiy9P-10" target="FMKRP7JuEmRdxRbRiy9P-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="382" y="898" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-25" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="FMKRP7JuEmRdxRbRiy9P-12" target="FMKRP7JuEmRdxRbRiy9P-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-26" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.57;exitY=-0.01;entryX=0;entryY=0.75;rounded=0;" edge="1" parent="1" source="FMKRP7JuEmRdxRbRiy9P-11" target="FMKRP7JuEmRdxRbRiy9P-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="665" y="898" />
+              <mxPoint x="665" y="99" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-27" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.73;exitY=0;entryX=1;entryY=0.78;rounded=0;" edge="1" parent="1" source="FMKRP7JuEmRdxRbRiy9P-8" target="FMKRP7JuEmRdxRbRiy9P-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1069" y="1215" />
+              <mxPoint x="1069" y="99" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FMKRP7JuEmRdxRbRiy9P-28" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0;entryX=1;entryY=0.66;rounded=0;" edge="1" parent="1" source="FMKRP7JuEmRdxRbRiy9P-9" target="FMKRP7JuEmRdxRbRiy9P-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1223" y="99" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
