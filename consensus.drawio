@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.3">
+  <diagram name="第 1 页" id="D-s8aLCXiV058GFfVeaB">
+    <mxGraphModel dx="1426" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m_0zojeuifKEyxcJuhM1-1" value="Process within View h" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="609" height="756" as="geometry" />
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-2" value="VRF lottery&#xa;Proposer list generation" style="whiteSpace=wrap;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="68" y="45" width="231" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-3" value="Proposer i&#xa;broadcasts PROPOSE batch" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="57" y="196" width="252" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-4" value="Non-selected nodes" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="379" y="57" width="200" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-5" value="Wait for next round" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="379" y="208" width="200" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-6" value="Voter committee&#xa;Parallel signature verification + voting" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="200" y="324" width="260" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-7" value="Aggregator&#xa;Collects ≥2f+1 votes" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="228" y="498" width="204" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-8" value="Executor&#xa;Sequentially executes batches" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="55" y="649" width="260" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-9" value="Backup aggregator&#xa;Initiates new proposal" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="365" y="661" width="218" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-10" value="View h+1 process overlapping execution" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="55" y="848" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-11" value="If sort&gt;0" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="m_0zojeuifKEyxcJuhM1-2" target="m_0zojeuifKEyxcJuhM1-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-12" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="m_0zojeuifKEyxcJuhM1-4" target="m_0zojeuifKEyxcJuhM1-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-13" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.12;entryY=0;rounded=0;" edge="1" parent="1" source="m_0zojeuifKEyxcJuhM1-3" target="m_0zojeuifKEyxcJuhM1-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="183" y="299" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-14" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.88;entryY=0;rounded=0;" edge="1" parent="1" source="m_0zojeuifKEyxcJuhM1-5" target="m_0zojeuifKEyxcJuhM1-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="479" y="299" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-15" value="VOTE" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="m_0zojeuifKEyxcJuhM1-6" target="m_0zojeuifKEyxcJuhM1-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-16" value="QC" style="curved=1;startArrow=none;endArrow=block;exitX=0.13;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="m_0zojeuifKEyxcJuhM1-7" target="m_0zojeuifKEyxcJuhM1-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="185" y="612" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-17" value="Timeout" style="curved=1;startArrow=none;endArrow=block;exitX=0.87;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="m_0zojeuifKEyxcJuhM1-7" target="m_0zojeuifKEyxcJuhM1-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="474" y="612" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_0zojeuifKEyxcJuhM1-18" value="Proceed to next view h+1" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="m_0zojeuifKEyxcJuhM1-8" target="m_0zojeuifKEyxcJuhM1-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
