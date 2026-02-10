@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8" pages="11">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8" pages="12">
   <diagram name="图4.1 BFT共识协议分类与演进关系" compressed="false" id="OfMr7Ntzyg-Cygr9KfY2">
     <mxGraphModel dx="1426" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -865,6 +865,53 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Link_L3_L4" edge="1" parent="1" source="L3_Group" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;" target="L4_Group" value="提交触发">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p3gOYtTE0VdUoXpw3MTI" name="第 12 页">
+    <mxGraphModel dx="1426" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Input" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f9f9;fontFamily=SimSun;" value="输入: 宏块交易集合 T&lt;sub&gt;h&lt;/sub&gt;&lt;br&gt;(无序, 多槽混合)" vertex="1">
+          <mxGeometry height="60" width="140" x="60" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Step1" parent="1" style="swimlane;horizontal=1;startSize=25;html=1;rounded=1;dashed=1;fontFamily=SimSun;whiteSpace=wrap;" value="步骤1: 冲突域分组" vertex="1">
+          <mxGeometry height="220" width="160" x="250" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DomA" parent="Step1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=SimSun;fontSize=11;" value="域 A (热点商户)" vertex="1">
+          <mxGeometry height="40" width="120" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DomB" parent="Step1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=SimSun;fontSize=11;" value="域 B (普通转账)" vertex="1">
+          <mxGeometry height="40" width="120" x="20" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DomC" parent="Step1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=SimSun;fontSize=11;" value="域 C (系统管理)" vertex="1">
+          <mxGeometry height="40" width="120" x="20" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Step2" parent="1" style="swimlane;horizontal=1;startSize=25;html=1;rounded=1;dashed=1;fontFamily=SimSun;whiteSpace=wrap;" value="步骤2: 确定性排序" vertex="1">
+          <mxGeometry height="220" width="160" x="460" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Sort1" parent="Step2" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=11;" value="域间排序:&#xa;H(domain_id)" vertex="1">
+          <mxGeometry height="70" width="110" x="25" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Sort2" parent="Step2" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=11;" value="域内排序:&#xa;Sender, Nonce" vertex="1">
+          <mxGeometry height="70" width="110" x="25" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="LinkS1S2" edge="1" parent="Step2" source="Sort1" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="Sort2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Output" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeWidth=2;fontFamily=SimSun;fontStyle=1;" value="输出: 确定性序列 π&lt;sub&gt;h&lt;/sub&gt;&lt;br&gt;[A...][B...][C...]" vertex="1">
+          <mxGeometry height="60" width="140" x="670" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Edge1" edge="1" parent="1" source="Input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=SimSun;fontSize=11;" target="Step1" value="解析规约">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Edge2" edge="1" parent="1" source="Step1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Step2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Edge3" edge="1" parent="1" source="Step2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=SimSun;" target="Output" value="派生">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
