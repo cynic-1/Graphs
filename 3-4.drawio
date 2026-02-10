@@ -1,9 +1,83 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8">
   <diagram name="第 1 页" id="TsILniVTuijLyjImTc5f">
-    <mxGraphModel>
+    <mxGraphModel dx="1426" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="bg_data" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=none;opacity=40;" value="" vertex="1">
+          <mxGeometry height="180" width="700" x="60" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bg_slot" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=none;opacity=40;" value="" vertex="1">
+          <mxGeometry height="350" width="700" x="60" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="bg_macro" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1f5fe;strokeColor=none;opacity=40;" value="" vertex="1">
+          <mxGeometry height="340" width="700" x="60" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="label_data" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#ef6c00;" value="数&#xa;据&#xa;面" vertex="1">
+          <mxGeometry height="80" width="30" x="70" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="label_slot" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#2e7d32;" value="槽&#xa;级&#xa;认&#xa;证&#xa;层" vertex="1">
+          <mxGeometry height="120" width="30" x="70" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="label_macro" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#01579b;" value="宏&#xa;块&#xa;终&#xa;局&#xa;层" vertex="1">
+          <mxGeometry height="120" width="30" x="70" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="node_client" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="客户端" vertex="1">
+          <mxGeometry height="60" width="30" x="150" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="node_batch" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#ef6c00;strokeWidth=2;" value="&lt;b&gt;批次打包 (Batching)&lt;/b&gt;&lt;br&gt;将 TX 封装为 Batch 内容" vertex="1">
+          <mxGeometry height="60" width="220" x="280" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="node_avail" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#ef6c00;strokeWidth=2;" value="&lt;b&gt;可用性投票 (Availability Voting)&lt;/b&gt;&lt;br&gt;n 个验证者签名 → ≥2f+1&lt;br&gt;&lt;i&gt;生成 AvailCert&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="220" x="280" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="node_bp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2e7d32;strokeWidth=2;" value="&lt;b&gt;槽提议者构造 BP&lt;/b&gt;&lt;br&gt;BP(v, h, s, cert_set)&lt;br&gt;[并行 k 个槽同时进行]" vertex="1">
+          <mxGeometry height="60" width="220" x="280" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="node_val_vote" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2e7d32;strokeWidth=2;align=left;spacingLeft=15;" value="&lt;b&gt;验证者投票 (Slot Voting)&lt;/b&gt;&lt;br&gt;• 签名检查&lt;br&gt;• parentQC 连续性检查&lt;br&gt;• &lt;font color=&quot;#cc0000&quot;&gt;桶合规检查 (硬约束)&lt;/font&gt;&lt;br&gt;• &lt;font color=&quot;#cc0000&quot;&gt;槽内唯一性 (硬约束)&lt;/font&gt;&lt;br&gt;• AvailCert 有效性验证" vertex="1">
+          <mxGeometry height="130" width="220" x="280" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="node_slotqc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2e7d32;strokeWidth=2;" value="&lt;b&gt;收集者聚合 SlotQC&lt;/b&gt;&lt;br&gt;≥2f+1 SlotVote 聚合&lt;br&gt;生成 SlotQC(v, h, s)" vertex="1">
+          <mxGeometry height="60" width="220" x="280" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="node_mh" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#01579b;strokeWidth=2;" value="&lt;b&gt;宏块领导者组装 MH&lt;/b&gt;&lt;br&gt;收集 k 个并行槽的 SlotQC&lt;br&gt;MH(v, h, parentQC, entries)" vertex="1">
+          <mxGeometry height="70" width="220" x="280" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="node_macrovote" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#01579b;strokeWidth=2;" value="&lt;b&gt;宏块验证与投票&lt;/b&gt;&lt;br&gt;验证者签署 MacroVote&lt;br&gt;≥2f+1 → &lt;b&gt;MacroQC&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="220" x="280" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="node_commit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#01579b;strokeWidth=3;dashed=0;" value="&lt;b&gt;3-chain Commit&lt;/b&gt;&lt;br&gt;B_{h-2} ← B_{h-1} ← B_h&lt;br&gt;&lt;font color=&quot;#01579b&quot;&gt;→ 确认并提交 B_{h-2}&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="220" x="280" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="flow1" edge="1" parent="1" source="node_client" style="endArrow=classic;html=1;exitX=1;exitY=0.333;entryX=0;entryY=0.5;strokeWidth=2;" target="node_batch" value="TX">
+          <mxGeometry relative="1" x="-0.1" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow2" edge="1" parent="1" source="node_batch" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;fontColor=#ef6c00;" target="node_avail" value="广播批次">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow3" edge="1" parent="1" source="node_avail" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;fontColor=#ef6c00;" target="node_bp" value="AvailCert">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow4" edge="1" parent="1" source="node_bp" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;fontColor=#2e7d32;" target="node_val_vote" value="广播 BP">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow5" edge="1" parent="1" source="node_val_vote" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;fontColor=#2e7d32;" target="node_slotqc" value="SlotVote">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow6" edge="1" parent="1" source="node_slotqc" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;fontColor=#2e7d32;" target="node_mh" value="SlotQC(v,h,s)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow7" edge="1" parent="1" source="node_mh" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;fontColor=#01579b;" target="node_macrovote" value="广播 MH">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow8" edge="1" parent="1" source="node_macrovote" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;fontColor=#01579b;" target="node_commit" value="MacroQC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fig_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" value="图 4.4 双层证书结构与消息流处理流程" vertex="1">
+          <mxGeometry height="30" width="300" x="240" y="930" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
