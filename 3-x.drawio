@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8" pages="12">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8" pages="13">
   <diagram name="图4.1 BFT共识协议分类与演进关系" compressed="false" id="OfMr7Ntzyg-Cygr9KfY2">
     <mxGraphModel dx="1426" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -913,6 +913,104 @@
         </mxCell>
         <mxCell id="Edge3" edge="1" parent="1" source="Step2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=SimSun;" target="Output" value="派生">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="3fuqsbS1VzwsxA4O1vOe" name="4.5 时序图">
+    <mxGraphModel dx="1426" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="L_Slots" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontFamily=SimSun;fontStyle=1" value="槽级并行层&#xa;(k Slots)" vertex="1">
+          <mxGeometry height="400" width="200" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Validators" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontFamily=SimSun;fontStyle=1" value="验证者集合&#xa;(Validators)" vertex="1">
+          <mxGeometry height="400" width="100" x="320" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Act_Val" parent="L_Validators" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#e1e1e1;" value="" vertex="1">
+          <mxGeometry height="100" width="10" x="45" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Macro" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontFamily=SimSun;fontStyle=1" value="宏块领导者&#xa;(Macro Leader)" vertex="1">
+          <mxGeometry height="400" width="100" x="480" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L_Commit" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontFamily=SimSun;fontStyle=1" value="提交逻辑&#xa;(Commit)" vertex="1">
+          <mxGeometry height="400" width="100" x="620" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Note_Parallel" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=-6;fillColor=#f5f5f5;fontFamily=SimSun;fontSize=10;" value="并行阶段" vertex="1">
+          <mxGeometry height="120" width="50" x="20" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Msg_BP0" edge="1" parent="1" source="L_Slots" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;fontFamily=Times New Roman;" target="L_Validators" value="Slot 0: BP">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="160" />
+            </Array>
+            <mxPoint x="180" y="160" as="sourcePoint" />
+            <mxPoint x="260" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Msg_BP1" edge="1" parent="1" source="L_Slots" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;fontFamily=Times New Roman;" target="L_Validators" value="Slot 1: BP">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="190" />
+            </Array>
+            <mxPoint x="180" y="190" as="sourcePoint" />
+            <mxPoint x="260" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Msg_BPk" edge="1" parent="1" source="L_Slots" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;fontFamily=Times New Roman;" target="L_Validators" value="Slot k: BP">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="220" />
+            </Array>
+            <mxPoint x="180" y="220" as="sourcePoint" />
+            <mxPoint x="260" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Label_Check" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=SimSun;" value="验证:&#xa;桶合规&#xa;槽唯一" vertex="1">
+          <mxGeometry height="40" width="50" x="375" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Msg_SlotQC" edge="1" parent="1" source="L_Validators" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;dashed=1;fontFamily=Times New Roman;" target="L_Macro" value="SlotQCs (via Collectors)">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="250" />
+            </Array>
+            <mxPoint x="380" y="250" as="sourcePoint" />
+            <mxPoint x="460" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Note_Macro" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=-6;fillColor=#fff9c4;fontFamily=SimSun;fontSize=10;" value="宏块阶段" vertex="1">
+          <mxGeometry height="100" width="50" x="20" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Msg_MH" edge="1" parent="1" source="L_Macro" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;fontFamily=Times New Roman;fontStyle=1" target="L_Validators" value="MacroHeader (entries)">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="280" />
+            </Array>
+            <mxPoint x="530" y="280" as="sourcePoint" />
+            <mxPoint x="380" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Msg_Vote" edge="1" parent="1" source="L_Validators" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;fontFamily=Times New Roman;" target="L_Macro" value="MacroVote">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="320" />
+            </Array>
+            <mxPoint x="380" y="320" as="sourcePoint" />
+            <mxPoint x="530" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Msg_QC" edge="1" parent="1" source="L_Macro" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;fontFamily=Times New Roman;" target="L_Commit" value="MacroQC Created">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="350" />
+            </Array>
+            <mxPoint x="530" y="350" as="sourcePoint" />
+            <mxPoint x="610" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Act_Exec" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1f5fe;fontFamily=Times New Roman;fontSize=10;" value="Check 3-Chain&#xa;Trigger CADO" vertex="1">
+          <mxGeometry height="40" width="90" x="660" y="360" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
