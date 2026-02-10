@@ -1,9 +1,872 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8">
-  <diagram name="第 1 页" id="c03dEOPhM1gubWyygbXm">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8" pages="11">
+  <diagram name="图4.1 BFT共识协议分类与演进关系" compressed="false" id="OfMr7Ntzyg-Cygr9KfY2">
+    <mxGraphModel dx="1426" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" value="图4.1  BFT共识协议分类与演进关系" vertex="1">
+          <mxGeometry height="30" width="660" x="220" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" value="BFT 排序协议" vertex="1">
+          <mxGeometry height="60" width="160" x="470" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" value="单提议者" vertex="1">
+          <mxGeometry height="50" width="160" x="260" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" value="多提议者" vertex="1">
+          <mxGeometry height="50" width="160" x="660" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" value="PBFT&#xa;O(n²)" vertex="1">
+          <mxGeometry height="70" width="150" x="160" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" value="HotStuff&#xa;O(n)&#xa;链式QC" vertex="1">
+          <mxGeometry height="70" width="150" x="340" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" value="请求分区&#xa;Mir-BFT" vertex="1">
+          <mxGeometry height="70" width="150" x="520" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" value="DAG 可用性&#xa;Narwhal 系列" vertex="1">
+          <mxGeometry height="70" width="170" x="700" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" value="多槽并行&#xa;MP3-BFT++&#xa;（本章）" vertex="1">
+          <mxGeometry height="80" width="170" x="900" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" value="Narwhal" vertex="1">
+          <mxGeometry height="55" width="140" x="720" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" value="Tusk" vertex="1">
+          <mxGeometry height="50" width="120" x="650" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" value="Bullshark" vertex="1">
+          <mxGeometry height="50" width="140" x="790" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" value="Mysticeti" vertex="1">
+          <mxGeometry height="55" width="160" x="720" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="shape=note;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" value="箭头表示：架构/设计演进关系&#xa;（非严格时间线）" vertex="1">
+          <mxGeometry height="70" width="660" x="220" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" source="3" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" target="4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" edge="1" parent="1" source="3" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" target="5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" edge="1" parent="1" source="4" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" target="6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" edge="1" parent="1" source="4" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" target="7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" edge="1" parent="1" source="5" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" target="8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" edge="1" parent="1" source="5" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" target="9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" source="5" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" target="10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" edge="1" parent="1" source="9" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" target="11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" edge="1" parent="1" source="11" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" target="12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" edge="1" parent="1" source="11" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" target="13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" source="12" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" target="14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" edge="1" parent="1" source="13" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" target="14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="图4.2 MP3-BFT++三阶段解耦架构" compressed="false" id="ROG0MFKO_zpRhDokPyMr">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="图4.2  MP3-BFT++三阶段解耦架构（数据/槽级认证/宏块终局 + 执行派生接口）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="20" width="860" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="数据面（批次可用性）" style="swimlane;horizontal=1;startSize=28;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="960" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="槽级认证层（k 个并行槽）" style="swimlane;horizontal=1;startSize=28;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="260" width="960" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="宏块链终局层（MacroQC + 3-chain commit）" style="swimlane;horizontal=1;startSize=28;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="480" width="960" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="执行派生接口（CADO）" style="swimlane;horizontal=1;startSize=28;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="720" width="960" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Batch&#xa;(交易批次)" style="shape=mxgraph.flowchart.document;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="3">
+          <mxGeometry x="120" y="130" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="AvailCert&#xa;≥2f+1" style="shape=mxgraph.flowchart.document;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="3">
+          <mxGeometry x="320" y="130" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="BP(v,h,s,cert_set)&#xa;槽提议" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="4">
+          <mxGeometry x="140" y="315" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="SlotQC(v,h,s)&#xa;≥2f+1" style="shape=mxgraph.flowchart.document;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="4">
+          <mxGeometry x="380" y="325" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="MH(v,h)&#xa;entries[SlotQC]" style="shape=mxgraph.flowchart.document;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="5">
+          <mxGeometry x="160" y="535" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="MacroQC&#xa;≥2f+1" style="shape=mxgraph.flowchart.document;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="5">
+          <mxGeometry x="380" y="545" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="3-chain&#xa;Commit" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="5">
+          <mxGeometry x="560" y="545" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="π_h&#xa;(确定性全序)" style="shape=mxgraph.flowchart.data;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="6">
+          <mxGeometry x="200" y="765" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="域段边界/域统计&#xa;→ 执行调度" style="shape=mxgraph.flowchart.data;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="6">
+          <mxGeometry x="420" y="765" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="共识层只保证集合一致（MacroQC），块内顺序由 CADO 派生" style="shape=note;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="6">
+          <mxGeometry x="660" y="765" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="可用性投票" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="引用 cert_set" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="槽内投票" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="9" target="10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="entries 记录" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="10" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="MacroVote" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="11" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="12" target="13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="提交触发" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="13" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="14" target="15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="图4.3 桶合规与哈希空间分区轮换" compressed="false" id="ILnSfYcwXEbHNnjbTyG3">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="图4.3  桶合规与哈希空间分区轮换（示例 N_b=12, k=3）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="20" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="哈希空间环&#xa;[0..N_b-1]" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="70" y="90" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="0" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="162.0" y="78.0" width="36" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="217.0" y="92.73720558371174" width="36" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="2" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="257.2627944162882" y="133.0" width="36" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="3" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="272.0" y="188.0" width="36" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="4" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="257.2627944162883" y="242.99999999999997" width="36" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="5" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="217.0" y="283.2627944162883" width="36" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="6" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="162.0" y="298.0" width="36" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="7" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="107.00000000000003" y="283.2627944162883" width="36" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="8" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="66.73720558371177" y="243.00000000000003" width="36" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="9" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="52.0" y="188.0" width="36" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="10" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="66.73720558371176" y="133.0" width="36" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="11" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="106.99999999999994" y="92.73720558371178" width="36" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="视图 v=0" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="330" y="110" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="Slot0: 桶 [0..3]" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="470" y="110" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="Slot1: 桶 [4..7]" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="650" y="110" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="Slot2: 桶 [8..11]" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="830" y="110" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="视图 v=1&#xa;偏移 +4" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="330" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="Slot0: 桶 [4..7]" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="470" y="170" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="Slot1: 桶 [8..11]" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="650" y="170" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="Slot2: 桶 [0..3]" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="830" y="170" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="视图 v=2&#xa;偏移 +8" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="330" y="240" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="Slot0: 桶 [8..11]" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="470" y="240" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="Slot1: 桶 [0..3]" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="650" y="240" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="Slot2: 桶 [4..7]" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="830" y="240" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="28" value="rotate(+4)" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;dashed=1;" edge="1" parent="1" source="16" target="20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" value="rotate(+4)" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;dashed=1;" edge="1" parent="1" source="20" target="24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="验证者投票检查（对 BP）" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="330" y="330" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="桶合规？&#xa;槽内唯一？&#xa;证书有效？" style="shape=mxgraph.flowchart.decision;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="360" y="390" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="是 → 投票" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="590" y="420" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="否 → 拒绝/丢弃" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="590" y="490" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="34" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="33" target="30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="35" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="30" target="31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="36" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="30" target="32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="37" value="桶合规：b(T)=H(sender,nonce) mod N_b ∈ Bkt[v][s]&#xa;槽内唯一：key(T)=(sender,nonce) 在同槽不重复" style="shape=note;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="330" y="540" width="670" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="图4.4 双层证书结构与消息流" compressed="false" id="zhC7ZjChPbLFuGizF5aL">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="图4.4  双层证书结构与消息流（数据面→槽级认证→宏块终局）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="20" width="660" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="数据面" style="swimlane;horizontal=0;startSize=28;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="330" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="槽级认证层（k 并行槽）" style="swimlane;horizontal=0;startSize=28;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="385" y="70" width="330" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="宏块链终局层" style="swimlane;horizontal=0;startSize=28;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="730" y="70" width="330" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="客户端" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="3">
+          <mxGeometry x="80" y="130" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="批次打包" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="3">
+          <mxGeometry x="80" y="210" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="广播 Batch" style="shape=cloud;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="3">
+          <mxGeometry x="80" y="290" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="可用性投票&#xa;(签名)" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="3">
+          <mxGeometry x="80" y="370" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="AvailCert&#xa;≥2f+1" style="shape=mxgraph.flowchart.document;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="3">
+          <mxGeometry x="80" y="470" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="BP 提议&#xa;BP(v,h,s,cert_set)" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="4">
+          <mxGeometry x="420" y="190" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="SlotVote&#xa;(验证者签名)" style="shape=mxgraph.flowchart.document;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="4">
+          <mxGeometry x="420" y="300" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="SlotQC(v,h,s)&#xa;≥2f+1" style="shape=mxgraph.flowchart.document;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="4">
+          <mxGeometry x="420" y="400" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="组装 MH&#xa;(entries: SlotQC×k)" style="shape=mxgraph.flowchart.document;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="5">
+          <mxGeometry x="765" y="230" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="MacroVote&#xa;(验证者签名)" style="shape=mxgraph.flowchart.document;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="5">
+          <mxGeometry x="765" y="340" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="MacroQC&#xa;≥2f+1" style="shape=mxgraph.flowchart.document;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="5">
+          <mxGeometry x="765" y="440" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="3-chain Commit&#xa;→ 触发 CADO" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="5">
+          <mxGeometry x="765" y="560" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="双层证书：&#xa;• AvailCert 保证批次可用性&#xa;• SlotQC 认证槽内提议&#xa;• MacroQC 认证宏块头" style="shape=note;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="420" y="670" width="600" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="TX" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="Batch" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="聚合" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="9" target="10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="cert_set 引用" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="10" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="验证者投票" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="11" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="聚合" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="12" target="13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="entries" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="13" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="14" target="15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28" value="聚合" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="15" target="16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="16" target="17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="图4.5 正常路径消息时序图" compressed="false" id="JH9u0ogG5alpxznUTdVG">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="图4.5  正常路径时序（k=3 并行槽 + 宏块收集窗口 δ_slot）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="20" width="660" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Slot 0" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="2" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Slot 1" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="270" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="310" width="2" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Slot 2" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="420" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="460" width="2" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="宏块终局" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="570" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="610" width="2" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="时间 →" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="80" width="780" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="BP₀ / Vote / SlotQC₀" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="220" y="120" width="420" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="BP₁ / Vote / SlotQC₁" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="220" y="270" width="420" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="BP₂ / Vote / SlotQC₂" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="220" y="420" width="420" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="210" y="125" width="6" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="650" y="125" width="6" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="PAR" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="190" y="125" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="δ_slot 收集窗口" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="200" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="组装 MH&#xa;MacroVote / MacroQC" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="680" y="300" width="300" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="3-chain&#xa;Commit" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="680" y="450" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="12" target="18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="13" target="18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="14" target="18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="18" target="19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="19" target="20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="并行性：k 个槽在同一视图/高度内并行生成 SlotQC&#xa;串行瓶颈：宏块领导者在 δ_slot 后汇总 entries 并推进 3-chain" style="shape=note;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="220" y="560" width="780" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="图4.6 CADO派生流程" compressed="false" id="lRnPTc5EA-MAjZ45fm-w">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="图4.6  CADO确定性块内排序派生流程（数据工件 + 处理流水线）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="20" width="760" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="已提交 MH(v,h)&#xa;entries[SlotQC]" style="shape=mxgraph.flowchart.document;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="70" y="100" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="步骤1&#xa;批次取回" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="240" y="100" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Batch 内容&#xa;(从签名者取回)" style="shape=mxgraph.flowchart.document;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="240" y="210" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="步骤2&#xa;合并去重" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="410" y="100" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="T_h&#xa;(交易集合)" style="shape=mxgraph.flowchart.data;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="410" y="210" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="步骤3&#xa;冲突域分组" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="580" y="100" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="groups[domain]&#xa;→ 列表集合" style="shape=mxgraph.flowchart.multidocument;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="580" y="210" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="步骤4&#xa;确定性排序" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="750" y="100" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="π_h&#xa;(全序)" style="shape=mxgraph.flowchart.data;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="750" y="210" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="输出到执行引擎&#xa;附带域段边界/域统计" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="920" y="100" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="域间：sort(domains) by H(domain_id)&#xa;域内：stable_sort(sender,nonce) ，tx_hash 作为确定性仲裁" style="shape=note;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="300" width="760" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;rounded=1;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="取回" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;dashed=1;" edge="1" parent="1" source="4" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="生成" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;dashed=1;" edge="1" parent="1" source="5" target="10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="生成" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;dashed=1;" edge="1" parent="1" source="6" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="生成" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;dashed=1;" edge="1" parent="1" source="7" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="图4.7 视图切换与恢复流程" compressed="false" id="n2pHW-YLIlY2bgKpIpB7">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="图4.7  视图切换与恢复（序列图风格，简化）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="20" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Replica 1" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="90" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="130" width="2" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Replica 2" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="270" y="90" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="130" width="2" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Replica 3" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="460" y="90" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="130" width="2" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Byzantine" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="650" y="90" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="130" width="2" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Leader(v+1)" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="840" y="90" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="130" width="2" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="超时 T_v" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="170" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="NEW_VIEW(v+1, highQC, lockedQC)" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="3" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="NEW_VIEW(v+1, highQC, lockedQC)" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="5" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="NEW_VIEW(v+1, highQC, lockedQC)" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="7" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="无响应" style="shape=note;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="685" y="250" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="选择 QC* = max(highQC)&#xa;保持 lockedQC 约束" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="830" y="410" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="广播提议/恢复&#xa;BP 引用 parentQC=QC*" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="830" y="520" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="PROPOSE / BP(..., parentQC=QC*)" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="11" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="PROPOSE / BP(..., parentQC=QC*)" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="11" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="PROPOSE / BP(..., parentQC=QC*)" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="11" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="PROPOSE / BP(..., parentQC=QC*)" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="11" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="活性：指数退避调整超时 T_{v+1}&#xa;安全：lockedQC 防止违反锁规则的回退" style="shape=note;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="650" width="850" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="图4.8 3-chain commit规则示意" compressed="false" id="WgXf90H0-Slcv_GjV8Vt">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="图4.8  3-chain Commit 规则示意" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="20" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="(a) 连续三块链满足 → 提交" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="(b) 视图切换间隙 → 不提交" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="80" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="B_h" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="70" y="130" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="B_{h+1}&#xa;QC✓" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="190" y="130" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="B_{h+2}&#xa;QC✓" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="310" y="130" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="B_{h+3}&#xa;QC✓" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="430" y="130" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="parent" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="6" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="parent" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="7" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="parent" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="8" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="提交 B_h：存在 B_h ← B_{h+1} ← B_{h+2}&#xa;且 B_{h+1}, B_{h+2} 均携带 MacroQC" style="shape=note;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="220" width="480" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="B_h" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="600" y="130" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="B_{h+1}&#xa;QC✓" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="720" y="130" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="(缺失)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="130" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="B_{h+3}&#xa;QC✓" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="960" y="130" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="14" target="13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;dashed=1;" edge="1" parent="1" source="15" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="16" target="15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="若链上无法形成连续三块并携带 QC&#xa;则不触发提交（保持安全）" style="shape=note;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="580" y="220" width="480" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="图4.9 安全性反证示意" compressed="false" id="dPVvvYKsibbEvmuiEvja">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="图4.9  安全性反证示意：两份 MacroQC 的投票集合必须相交" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="20" width="860" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="链1：B_h ← C_{h+1} ← D_{h+2}&#xa;(C,D 含 MacroQC)" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="90" width="420" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="链2：B&#39;_h ← C&#39;_{h+1} ← D&#39;_{h+2}&#xa;(C&#39;,D&#39; 含 MacroQC)" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="620" y="90" width="420" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Q&#xa;|Q|=2f+1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;opacity=80;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="260" y="230" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Q&#39;&#xa;|Q&#39;|=2f+1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;opacity=80;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="460" y="230" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="|Q ∩ Q&#39;| ≥ f+1&#xa;⇒ 至少 1 个诚实节点" style="shape=note;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="370" y="300" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="若提交 B_h 与 B&#39;_h（同高度冲突）&#xa;则存在诚实节点对同一高度两块双重投票 → 矛盾" style="shape=mxgraph.flowchart.process;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="240" y="480" width="620" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="MacroQC(C_{h+1}) 的投票集合" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="3" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="MacroQC(C&#39;_{h+1}) 的投票集合" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="4" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="图4.10 吞吐曲线示意" compressed="false" id="8-UdzRLxIYj23TpjyN_t">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="图4.10  端到端瓶颈模型与吞吐量趋势（概念曲线）" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="20" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="TPS ↑" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="150" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="冲突强度 κ →" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="720" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="" style="rounded=0;strokeColor=#000000;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="140" width="2" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="" style="rounded=0;strokeColor=#000000;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="680" width="860" height="2" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="" style="rounded=0;strokeColor=#000000;fillColor=#000000;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="260" width="860" height="2" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="TPS_order (k=16)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="240" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="" style="rounded=0;strokeColor=#000000;fillColor=#000000;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="320" width="860" height="2" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="TPS_order (k=8)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="300" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="" style="rounded=0;strokeColor=#000000;fillColor=#000000;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="420" width="860" height="2" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="TPS_order (k=4)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FFFFFF;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="400" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="" style="ellipse;strokeColor=#000000;fillColor=#000000;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="500" width="6" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="" style="ellipse;strokeColor=#000000;fillColor=#000000;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="520" width="6" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="" style="ellipse;strokeColor=#000000;fillColor=#000000;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="610" width="6" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="" style="ellipse;strokeColor=#000000;fillColor=#000000;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="870" y="660" width="6" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="TPS_exec（无CADO）" style="endArrow=none;html=1;strokeColor=#000000;curved=1;" edge="1" parent="1" source="13" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="" style="endArrow=none;html=1;strokeColor=#000000;curved=1;" edge="1" parent="1" source="14" target="15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="" style="endArrow=none;html=1;strokeColor=#000000;curved=1;" edge="1" parent="1" source="15" target="16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="" style="ellipse;strokeColor=#000000;fillColor=#000000;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="470" width="6" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="" style="ellipse;strokeColor=#000000;fillColor=#000000;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="480" width="6" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="" style="ellipse;strokeColor=#000000;fillColor=#000000;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="520" width="6" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="" style="ellipse;strokeColor=#000000;fillColor=#000000;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="900" y="560" width="6" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="TPS_exec（有CADO）" style="endArrow=none;html=1;strokeColor=#000000;curved=1;dashed=1;" edge="1" parent="1" source="20" target="21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="" style="endArrow=none;html=1;strokeColor=#000000;curved=1;dashed=1;" edge="1" parent="1" source="21" target="22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="" style="endArrow=none;html=1;strokeColor=#000000;curved=1;dashed=1;" edge="1" parent="1" source="22" target="23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="端到端：TPS_total = min(TPS_order, TPS_exec)&#xa;低冲突：瓶颈在排序（增大 k 提升上界）&#xa;高冲突：瓶颈在执行（CADO 抬高执行上界）" style="shape=note;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="160" y="560" width="760" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Wk5-WtUF5ubFm_PwdSSA" name="4.2 核心结构">
+    <mxGraphModel dx="1426" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="L4_Group" parent="1" style="swimlane;horizontal=1;startSize=30;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=SimSun;fontSize=14;fontStyle=1;whiteSpace=wrap;align=center;collapsible=0;" value="第四层：执行协同接口 (Execution Interface)" vertex="1">
+          <mxGeometry height="120" width="600" x="120" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CADO_Box" parent="L4_Group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Times New Roman;fontSize=12;fontStyle=1" value="CADO: 冲突感知确定性排序&#xa;(Conflict-Aware Deterministic Ordering)" vertex="1">
+          <mxGeometry height="50" width="300" x="150" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="L3_Group" parent="1" style="swimlane;horizontal=1;startSize=30;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=SimSun;fontSize=14;fontStyle=1;whiteSpace=wrap;align=center;collapsible=0;" value="第三层：宏块链终局层 (Macro Consensus)" vertex="1">
+          <mxGeometry height="160" width="600" x="120" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="MacroLeader" parent="L3_Group" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=SimSun;" value="宏块领导者&#xa;(Macro Leader)" vertex="1">
+          <mxGeometry height="60" width="100" x="50" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MacroHeader" parent="L3_Group" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=SimSun;size=15;" value="宏块头 MH&#xa;(包含 SlotQC 列表)" vertex="1">
+          <mxGeometry height="80" width="120" x="240" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MacroQC" parent="L3_Group" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" value="MacroQC&#xa;(≥2f+1 投票)" vertex="1">
+          <mxGeometry height="60" width="100" x="450" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Edge_L3_1" edge="1" parent="L3_Group" source="MacroLeader" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=SimSun;fontSize=10;" target="MacroHeader" value="组装">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Edge_L3_2" edge="1" parent="L3_Group" source="MacroHeader" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=SimSun;fontSize=10;" target="MacroQC" value="投票">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L2_Group" parent="1" style="swimlane;horizontal=1;startSize=30;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=SimSun;fontSize=14;fontStyle=1;whiteSpace=wrap;align=center;collapsible=0;" value="第二层：槽级认证层 (Slot Consensus)" vertex="1">
+          <mxGeometry height="180" width="600" x="120" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="Slot0" parent="L2_Group" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fontFamily=Times New Roman;" value="Slot 0&#xa;(Proposer)" vertex="1">
+          <mxGeometry height="40" width="80" x="40" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Slot1" parent="L2_Group" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fontFamily=Times New Roman;" value="Slot 1&#xa;(Proposer)" vertex="1">
+          <mxGeometry height="40" width="80" x="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SlotK" parent="L2_Group" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fontFamily=Times New Roman;" value="Slot k-1&#xa;(Proposer)" vertex="1">
+          <mxGeometry height="40" width="80" x="480" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Ellipsis" parent="L2_Group" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" value="..." vertex="1">
+          <mxGeometry height="30" width="60" x="300" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="SlotQCs" parent="L2_Group" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1e1e1;fontFamily=SimSun;" value="并行生成 SlotQC" vertex="1">
+          <mxGeometry height="40" width="520" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Edge_L2_1" edge="1" parent="L2_Group" source="Slot0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SlotQCs" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Edge_L2_2" edge="1" parent="L2_Group" source="Slot1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SlotQCs" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Edge_L2_3" edge="1" parent="L2_Group" source="SlotK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SlotQCs" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L1_Group" parent="1" style="swimlane;horizontal=1;startSize=30;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=SimSun;fontSize=14;fontStyle=1;whiteSpace=wrap;align=center;collapsible=0;" value="第一层：数据面 (Data Plane)" vertex="1">
+          <mxGeometry height="120" width="600" x="120" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="Batch" parent="L1_Group" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontFamily=SimSun;" value="批次 (Batch)" vertex="1">
+          <mxGeometry height="60" width="80" x="100" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AvailCert" parent="L1_Group" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontFamily=SimSun;" value="可用性证书&#xa;(AvailCert)" vertex="1">
+          <mxGeometry height="60" width="100" x="400" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Edge_L1" edge="1" parent="L1_Group" source="Batch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=SimSun;" target="AvailCert" value="≥2f+1 签名">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Link_L1_L2" edge="1" parent="1" source="AvailCert" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" target="L2_Group" value="引用">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Link_L2_L3" edge="1" parent="1" source="L2_Group" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="L3_Group" value="聚合">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Link_L3_L4" edge="1" parent="1" source="L3_Group" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;" target="L4_Group" value="提交触发">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
