@@ -1,9 +1,71 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.4.0">
-  <diagram name="第 1 页" id="vX4hOh05j7iNc7IT5y-0">
+  <diagram name="4.5 LEAP执行流水线" id="vX4hOh05j7iNc7IT5y-0">
     <mxGraphModel dx="1213" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="frame" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;strokeColor=#CCCCCC;" value="" vertex="1">
+          <mxGeometry height="320" width="760" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="input" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" value="输入: 确定性序列 π&lt;sub&gt;h&lt;/sub&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;(来自第四章 CADO)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="130" x="60" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="stage1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="① 域感知计划&lt;br&gt;(Domain-aware Plan)&lt;br&gt;&lt;i style=&quot;font-size:10px&quot;&gt;划分域段 / 弱独立检测&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="230" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="workers_bg" parent="1" style="swimlane;horizontal=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;startSize=20;" value="③ 并行执行与验证&lt;br&gt;(Workers)" vertex="1">
+          <mxGeometry height="240" width="160" x="410" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w1" parent="workers_bg" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" value="Worker 1" vertex="1">
+          <mxGeometry height="30" width="120" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="w2" parent="workers_bg" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" value="Worker 2" vertex="1">
+          <mxGeometry height="30" width="120" x="20" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="w3" parent="workers_bg" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="..." vertex="1">
+          <mxGeometry height="30" width="30" x="65" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="wn" parent="workers_bg" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" value="Worker N" vertex="1">
+          <mxGeometry height="30" width="120" x="20" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="mvstate" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;" value="② MVState&lt;br&gt;(多版本状态)" vertex="1">
+          <mxGeometry height="70" width="80" x="450" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="hotdelta" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="④ Hot-Delta 分片&lt;br&gt;&lt;i style=&quot;font-size:10px&quot;&gt;热点写冲突消除&lt;/i&gt;" vertex="1">
+          <mxGeometry height="50" width="150" x="610" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="backpressure" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="⑤ 自适应背压&lt;br&gt;&lt;i style=&quot;font-size:10px&quot;&gt;动态调整窗口 W&lt;/i&gt;" vertex="1">
+          <mxGeometry height="50" width="150" x="610" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="output" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" value="输出: StateRoot&lt;sub&gt;h&lt;/sub&gt;" vertex="1">
+          <mxGeometry height="50" width="150" x="610" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="stage1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="stage1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="workers_bg" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="workers_bg" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" target="mvstate" value="读写">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="workers_bg" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hotdelta" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="180" />
+              <mxPoint x="590" y="95" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="workers_bg" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="backpressure" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="backpressure" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="output" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="hotdelta" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="backpressure" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
