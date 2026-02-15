@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.4.0" pages="2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.4.0" pages="3">
   <diagram name="4.5 LEAP执行流水线" id="vX4hOh05j7iNc7IT5y-0">
     <mxGraphModel dx="1213" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -128,6 +128,49 @@
         </mxCell>
         <mxCell id="e_agg_final" edge="1" parent="1" source="aggregation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="final_val" value="">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="fpSuaEC6j-ADtBtl1JZK" name="5.4 MVState结构">
+    <mxGraphModel dx="1213" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title_54" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1" value="图 5.4 多版本状态版本链结构 (MVState)" vertex="1">
+          <mxGeometry height="20" width="480" x="149" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="key" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontStyle=1" value="Key: bal(A)" vertex="1">
+          <mxGeometry height="60" width="99" x="130" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="v1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="TxIdx: 2&lt;br&gt;Val: 100&lt;br&gt;&lt;b&gt;COMMITTED&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="90" x="269" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="v2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="TxIdx: 5&lt;br&gt;Val: 150&lt;br&gt;&lt;b&gt;COMMITTED&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="90" x="399" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="v3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="TxIdx: 8&lt;br&gt;Val: 200&lt;br&gt;&lt;b&gt;TENTATIVE&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="90" x="529" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="v_inv" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;dashed=1;" value="TxIdx: 12&lt;br&gt;&lt;i&gt;(被撤销)&lt;/i&gt;&lt;br&gt;&lt;b&gt;ESTIMATE&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="90" x="529" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" edge="1" parent="1" source="key" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="v1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" edge="1" parent="1" source="v1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="v2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" edge="1" parent="1" source="v2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="v3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" edge="1" parent="1" source="v2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="v_inv" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="509" y="130" />
+              <mxPoint x="509" y="215" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
