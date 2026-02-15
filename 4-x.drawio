@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.4.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.4.0" pages="2">
   <diagram name="4.5 LEAP执行流水线" id="vX4hOh05j7iNc7IT5y-0">
     <mxGraphModel dx="1213" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -64,6 +64,69 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e7" edge="1" parent="1" source="hotdelta" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="backpressure" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="71rPddaPsSAGoQB6BubI" name="4.8 热点账户增量分片">
+    <mxGraphModel dx="1213" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="base_bal" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;strokeColor=#666666;" value="Base Balance&lt;br&gt;(基础余额)" vertex="1">
+          <mxGeometry height="80" width="80" x="80" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="tx_group" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="大量并发写入交易&lt;br&gt;(Tx1, Tx2, ... TxN)" vertex="1">
+          <mxGeometry height="40" width="280" x="240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hash_func" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Hash(Tx) % P" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="slots_container" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=20;fillColor=#f8cecc;strokeColor=#b85450;" value="增量槽 (Delta Slots)" vertex="1">
+          <mxGeometry height="80" width="280" x="240" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="s0" parent="slots_container" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;" value="Slot 0" vertex="1">
+          <mxGeometry height="30" width="50" x="20" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" parent="slots_container" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;" value="Slot 1" vertex="1">
+          <mxGeometry height="30" width="50" x="90" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dots" parent="slots_container" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="..." vertex="1">
+          <mxGeometry height="20" width="20" x="150" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="sP" parent="slots_container" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;" value="Slot P" vertex="1">
+          <mxGeometry height="30" width="50" x="190" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aggregation" parent="1" style="triangle;whiteSpace=wrap;html=1;direction=north;fillColor=#d5e8d4;strokeColor=#82b366;" value="聚合 (Sum)" vertex="1">
+          <mxGeometry height="80" width="60" x="600" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="final_val" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1" value="最终余额" vertex="1">
+          <mxGeometry height="40" width="100" x="680" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="e_tx_hash" edge="1" parent="1" source="tx_group" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hash_func" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_hash_slots" edge="1" parent="1" source="hash_func" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="slots_container" value="分散写入">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_base_agg" edge="1" parent="1" source="base_bal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="aggregation" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="90" />
+              <mxPoint x="630" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_slots_agg" edge="1" parent="1" source="slots_container" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="aggregation" value="读取时合并">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="240" />
+              <mxPoint x="630" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_agg_final" edge="1" parent="1" source="aggregation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="final_val" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
