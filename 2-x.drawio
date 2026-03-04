@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.0" pages="5">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.0" pages="6">
   <diagram name="2.1 状态模型" id="rCulGGahB7cM4JqDpHSq">
     <mxGraphModel dx="1426" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="400" math="0" shadow="0">
       <root>
@@ -628,6 +628,62 @@
             <mxPoint x="280" y="250" as="sourcePoint" />
             <mxPoint x="280" y="80" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="KNMBTBlA6ZOvZ-fZqWiU" name="忽略 mvcc">
+    <mxGraphModel dx="1426" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="layer_tx" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;strokeWidth=1;fillColor=none;dashed=1;" value="并发事务层 (Concurrent Transactions)" vertex="1">
+          <mxGeometry height="100" width="700" x="60" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tx_101" parent="layer_tx" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontSize=12;" value="事务 101&lt;br&gt;(已提交)" vertex="1">
+          <mxGeometry height="40" width="100" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tx_102" parent="layer_tx" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontSize=12;strokeColor=#b85450;" value="事务 102&lt;br&gt;(活跃/未提交)" vertex="1">
+          <mxGeometry height="40" width="100" x="300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tx_103" parent="layer_tx" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;fontSize=12;fontStyle=1" value="事务 103 (读)&lt;br&gt;生成 ReadView" vertex="1">
+          <mxGeometry height="40" width="100" x="560" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="layer_data" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=14;" value="版本链 (Version Chain / Undo Log)" vertex="1">
+          <mxGeometry height="30" width="210" x="310" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="node_v3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;最新版本 (Head)&lt;/b&gt;&lt;br&gt;Value: C&lt;br&gt;trx_id: 102" vertex="1">
+          <mxGeometry height="60" width="140" x="100" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="node_v2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;" value="&lt;b&gt;历史版本 V2&lt;/b&gt;&lt;br&gt;Value: B&lt;br&gt;trx_id: 101" vertex="1">
+          <mxGeometry height="60" width="140" x="340" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="node_v1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;" value="&lt;b&gt;历史版本 V1&lt;/b&gt;&lt;br&gt;Value: A&lt;br&gt;trx_id: 99" vertex="1">
+          <mxGeometry height="60" width="140" x="580" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" edge="1" parent="1" source="node_v3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=11;" target="node_v2" value="roll_ptr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" edge="1" parent="1" source="node_v2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=11;" target="node_v1" value="roll_ptr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="search_path" edge="1" parent="1" style="curved=1;endArrow=classic;html=1;dashed=1;dashPattern=8 8;strokeWidth=2;fontColor=#0059b3;fontSize=12;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="node_v2" value="事务 103 的读请求路径 (Read Path)">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0513" y="15" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="750" y="100" />
+              <mxPoint x="750" y="340" />
+              <mxPoint x="410" y="340" />
+            </Array>
+            <mxPoint x="610" y="80" as="sourcePoint" />
+            <mxPoint x="430" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_fail" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#b85450;" value="[不可见]&lt;br&gt;trx_id 102 尚未提交" vertex="1">
+          <mxGeometry height="40" width="110" x="115" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="label_success" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#2d7600;fontStyle=1" value="[可见]&lt;br&gt;trx_id 101 已提交" vertex="1">
+          <mxGeometry height="40" width="90" x="365" y="275" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
