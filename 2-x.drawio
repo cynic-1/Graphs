@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.0" pages="2">
   <diagram name="2.1 状态模型" id="rCulGGahB7cM4JqDpHSq">
     <mxGraphModel dx="1426" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="400" math="0" shadow="0">
       <root>
@@ -17,13 +17,13 @@
           <mxGeometry height="8" width="8" x="194" y="165" as="geometry" />
         </mxCell>
         <mxCell id="box_acc_l" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Times New Roman;" value="Account&#xa;state" vertex="1">
-          <mxGeometry height="55" width="120" x="23" y="250" as="geometry" />
+          <mxGeometry height="55" width="107" x="28" y="250" as="geometry" />
         </mxCell>
         <mxCell id="box_acc_m" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Times New Roman;" value="Account&#xa;state" vertex="1">
-          <mxGeometry height="55" width="120" x="138" y="250" as="geometry" />
+          <mxGeometry height="55" width="112" x="142" y="250" as="geometry" />
         </mxCell>
         <mxCell id="box_acc_r" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Times New Roman;" value="Account&#xa;state" vertex="1">
-          <mxGeometry height="55" width="120" x="253" y="250" as="geometry" />
+          <mxGeometry height="55" width="113" x="260" y="250" as="geometry" />
         </mxCell>
         <mxCell id="e_tx_to_j" edge="1" parent="1" source="box_tx" style="endArrow=none;html=1;strokeWidth=2;fontFamily=Times New Roman;" target="j_account" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -75,6 +75,53 @@
         </mxCell>
         <mxCell id="e_j_to_out1" edge="1" parent="1" source="j_utxo" style="endArrow=block;html=1;strokeWidth=2;fontFamily=Times New Roman;" target="box_out1" value="">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="im4OnjWnqRBXXOPjXUZc" name="2.2 稳定币分类">
+    <mxGraphModel dx="1426" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3P6Nrt3vtvL4ITmoqo4b-8" edge="1" parent="1" source="3P6Nrt3vtvL4ITmoqo4b-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;fontSize=13;" target="3P6Nrt3vtvL4ITmoqo4b-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3P6Nrt3vtvL4ITmoqo4b-9" edge="1" parent="1" source="3P6Nrt3vtvL4ITmoqo4b-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontSize=13;" target="3P6Nrt3vtvL4ITmoqo4b-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3P6Nrt3vtvL4ITmoqo4b-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" value="稳定币" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="3P6Nrt3vtvL4ITmoqo4b-10" edge="1" parent="1" source="3P6Nrt3vtvL4ITmoqo4b-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;fontSize=13;" target="3P6Nrt3vtvL4ITmoqo4b-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3P6Nrt3vtvL4ITmoqo4b-11" edge="1" parent="1" source="3P6Nrt3vtvL4ITmoqo4b-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontSize=13;" target="3P6Nrt3vtvL4ITmoqo4b-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3P6Nrt3vtvL4ITmoqo4b-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" value="有抵押稳定币" vertex="1">
+          <mxGeometry height="60" width="120" x="224" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="3P6Nrt3vtvL4ITmoqo4b-12" edge="1" parent="1" source="3P6Nrt3vtvL4ITmoqo4b-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;fontSize=13;" target="3P6Nrt3vtvL4ITmoqo4b-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3P6Nrt3vtvL4ITmoqo4b-13" edge="1" parent="1" source="3P6Nrt3vtvL4ITmoqo4b-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontSize=13;" target="3P6Nrt3vtvL4ITmoqo4b-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3P6Nrt3vtvL4ITmoqo4b-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" value="无抵押稳定币" vertex="1">
+          <mxGeometry height="60" width="120" x="224" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="3P6Nrt3vtvL4ITmoqo4b-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" value="法币抵押型&lt;div&gt;稳定币&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3P6Nrt3vtvL4ITmoqo4b-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" value="链上资产抵押型&lt;div&gt;稳定币&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="3P6Nrt3vtvL4ITmoqo4b-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" value="算法型&lt;div&gt;稳定币&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="3P6Nrt3vtvL4ITmoqo4b-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" value="央行数字货币" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="430" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
