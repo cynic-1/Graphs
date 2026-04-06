@@ -393,20 +393,14 @@
     </mxGraphModel>
   </diagram>
   <diagram id="oRe_8Hbx3jx19NwBydFS" name="2.4 chain &amp; dag">
-    <mxGraphModel dx="1426" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="650" math="0" shadow="0">
+    <mxGraphModel dx="1414" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="650" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="panel_chain" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Times New Roman;" value="" vertex="1">
-          <mxGeometry height="520" width="460" x="60" y="80" as="geometry" />
-        </mxCell>
-        <mxCell id="panel_dag" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Times New Roman;" value="" vertex="1">
-          <mxGeometry height="520" width="510" x="540" y="80" as="geometry" />
-        </mxCell>
-        <mxCell id="hdr_chain" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fontFamily=Times New Roman;" value="Chain-Based" vertex="1">
+        <mxCell id="hdr_chain" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fontFamily=Times New Roman;" value="链式结构" vertex="1">
           <mxGeometry height="30" width="460" x="60" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="hdr_dag" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fontFamily=Times New Roman;" value="DAG-Based" vertex="1">
+        <mxCell id="hdr_dag" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fontFamily=Times New Roman;" value="DAG结构" vertex="1">
           <mxGeometry height="30" width="500" x="540" y="90" as="geometry" />
         </mxCell>
         <mxCell id="c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontSize=13;fontFamily=Times New Roman;" value="Block 0&#xa;(Genesis)" vertex="1">
