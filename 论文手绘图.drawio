@@ -289,6 +289,9 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="9XrX64fnDYNVxlxfXgay-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="确定性交易序列&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="250" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
