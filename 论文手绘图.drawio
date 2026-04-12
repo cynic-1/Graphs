@@ -821,7 +821,7 @@
         <mxCell id="HQ6aUebxscZW6yDc3eiU-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;事件(a)&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="160" x="250" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="HQ6aUebxscZW6yDc3eiU-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 14px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;MVRead遇到ESTIMATE版本，&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;RegisterDeps成功&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="HQ6aUebxscZW6yDc3eiU-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 14px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;MVRead遇到ESTIMATE版本，&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;RegisterDep成功&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="70" width="280" x="210" y="330" as="geometry" />
         </mxCell>
         <mxCell id="HQ6aUebxscZW6yDc3eiU-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;事件(b)&lt;/span&gt;" vertex="1">
